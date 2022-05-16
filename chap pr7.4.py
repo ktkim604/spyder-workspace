@@ -1,7 +1,7 @@
 import random
 import turtle
 
-def draw_maze(x, y):
+def draw_maze(x, y):    # 미로 틀 만들기
 	for i in range(2):
 		t.penup()
 		if i==1 :
@@ -34,7 +34,7 @@ screen.onkey(turn_right, "Right")
 
 t.penup();
 t.goto(-300, 250)
-t.speed(1)
+t.speed(0)
 t.pendown();
 
 
