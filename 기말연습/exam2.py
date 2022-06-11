@@ -1,7 +1,7 @@
 import random
 import turtle
 
-def draw_maze(x, y):  
+def draw_maze(x, y):   #경로 만들어주는 함수
 	for i in range(2):
 		t.penup()
 		if i==1 :
@@ -24,14 +24,14 @@ def turn_right():
 	t.right(10)
 	t.forward(10)
 
-t = turtle.Turtle()
+t = turtle.Turtle()     #터틀 생성
 screen = turtle.Screen()
 t.shape("turtle")
 t.speed(0)
 
-draw_maze(-300, 200)
-t.penup();
-t.goto(-300, 250)
+draw_maze(-300, 200)  #경로만들어주고
+t.penup(); 
+t.goto(-300, 250)    #터틀 시작점으로 이동시킴
 t.speed(1)
 t.pendown();
 
